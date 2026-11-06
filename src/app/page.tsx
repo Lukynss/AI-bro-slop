@@ -2,14 +2,8 @@ import { SlopGenerator } from "@/components/slop-generator";
 
 export default function Home() {
   return (
-    <div className="relative isolate flex min-h-dvh flex-1 flex-col">
-      <div className="atmosphere" aria-hidden="true">
-        <span className="orb orb-a" />
-        <span className="orb orb-b" />
-        <span className="orb orb-c" />
-        <span className="orb orb-d" />
-      </div>
-      <div className="grain" aria-hidden="true" />
+    <div className="relative flex min-h-dvh flex-1 flex-col">
+      <div className="field" aria-hidden="true" />
 
       <a
         href="#generator"
@@ -18,22 +12,14 @@ export default function Home() {
         Skip to generator
       </a>
 
-      <header className="relative z-10 mx-auto flex w-full max-w-5xl items-center justify-between gap-4 px-4 py-5 sm:px-6">
-        <div className="flex items-center gap-2.5">
-          <span className="glass-mark" aria-hidden="true">
-            S
-          </span>
-          <span className="font-serif text-[1.35rem] tracking-[-0.03em] text-stone-950">
-            Slopsum
-          </span>
-        </div>
-        <p className="text-[0.68rem] font-medium tracking-[0.16em] text-stone-600 uppercase">
-          Browser-only
+      <header className="relative z-10 px-6 pt-7 sm:px-10 sm:pt-9">
+        <p className="font-serif text-[1.15rem] tracking-[-0.02em] text-stone-950">
+          Slopsum
         </p>
       </header>
 
-      <main className="relative z-10 flex flex-1 flex-col px-4 pb-12 sm:px-6">
-        <div className="mx-auto my-auto w-full max-w-[760px]">
+      <main className="relative z-10 flex flex-1 flex-col px-4 pt-8 pb-16 sm:px-8">
+        <div className="mx-auto my-auto w-full max-w-[40rem]">
           <SlopGenerator />
         </div>
       </main>
